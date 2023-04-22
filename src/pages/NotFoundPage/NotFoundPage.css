@@ -1,0 +1,15 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center > div {
+    width: 510px;
+}
+
+.center h3 {
+    margin-top: 48px;
+    margin-bottom: 16px;
+}

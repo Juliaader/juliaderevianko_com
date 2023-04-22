@@ -1,0 +1,55 @@
+.quote_italic {
+    font-size: 16px;
+    line-height: 26px;
+    font-style: italic;
+    color: #4CAEFF;
+    width: 440px;
+}
+
+.quote_block {
+    width: 480px;
+    background: #F7F9FC;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0px 8px 8px rgba(85, 146, 236, 0.08);
+    border-radius: 16px;
+}
+.quote_author {
+    display: flex;
+}
+
+.quote_author img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.quote_author_info {
+    margin-left: 12px;
+}
+.quote_author_name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1E272E;
+}
+
+.page_subtitle {
+    font-size: 12px;
+    line-height: 22px;
+    color: #3D4E5C;
+}
+
+.openQuote {
+    position: absolute;
+    top: -24px;
+}
+
+@media screen and (max-width: 768px) {
+    .quote_block {
+        width: 100%;
+    }
+    .quote_italic {
+        width: 100%;
+    }
+}

@@ -1,0 +1,606 @@
+.persona_about {
+    display: grid;
+    column-gap: 64px;
+    grid-template-columns: 366px 4fr 3fr;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: start;
+    /*justify-content: space-between;*/
+    /*gap: 70px;*/
+
+}
+
+.persona_about ul {
+    line-height: 26px;
+}
+
+.persona_image {
+    position: relative;
+}
+
+.persona_image {
+    grid-column: 1/2;
+    grid-row: 1/4;
+
+}
+
+.persona_quote_block {
+    color: #3D4E5C;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: -25px;
+}
+
+.persona_bio_block {
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.persona_goals {
+    grid-row: 1/2;
+    grid-column: 3/4;
+
+}
+
+.persona_frustrations,
+.persona_goals,
+.goals_list {
+    color: #3D4E5C;
+}
+
+.persona_motivation {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin-top: -8px;
+
+}
+
+.persona_frustrations {
+    grid-row: 3/4;
+    grid-column: 3/4;
+
+}
+
+.persona_image_text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.persona_image_text .persona_name {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.persona_image_text .persona_family,
+.persona_image_text .persona_age {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.persona_about > div + div {
+    /*flex: 1 1 33%*/
+    /*padding-left: 80px;*/
+}
+
+.quote_author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.quote_author img {
+    transform: rotate(180deg);
+}
+
+.persona_quote {
+    width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.quote_author_name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #46AAFF;
+    position: relative;
+    margin-right: 26px;
+}
+
+.quote_author_name:before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 4px;
+    background-color: #46AAFF;
+    left: -40px;
+    border-radius: 8px;
+    top: 15px;
+}
+
+.title_stick {
+    position: relative;
+    /*margin-left: 20px;*/
+}
+
+.title_stick:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 36px;
+    background-color: #46AAFF;
+    left: -20px;
+    border-radius: 8px;
+    top: 2px;
+}
+
+.goals_list > li {
+    margin-top: 8px;
+}
+
+.persona_story {
+    gap: 69px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona_story > div {
+    /*flex: 1 0 25%;*/
+    width: 285px;
+    /*padding-right: 2%;*/
+    /*width: ;*/
+}
+
+.persona_chart_btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona_chart_btns > div {
+    width: calc(20% - 22px);
+    padding: 21px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.persona_chart_img img {
+    width: 100%;
+}
+
+.persona_ujm {
+    color: #3D405C;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.persona_ujm_item {
+    width: calc(20% - 22px);
+    border: 1px solid #ECECF0;
+    border-radius: 8px;
+    padding: 16px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.chart_quality_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart_quality_text {
+    max-width: 30%;
+}
+
+.wireframes_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wireframes_text {
+    max-width: 30%;
+}
+
+.wireframe_paragraph_item {
+    display: flex;
+    align-items: stretch;
+
+}
+
+.wireframe_paragraph_item .blue_line {
+    margin-right: 16px;
+    width: 18px;
+    background-color: #4AACFF;
+    border-radius: 4px;
+}
+
+.kpi_metrics_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kpi_metrics_item {
+    max-width: 28%;
+}
+
+.signup_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.signup_item_text {
+    width: 487px;
+    max-width: 100%;
+}
+
+.signup_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup_item img {
+    max-width: 310px;
+}
+
+.signup_item:first-child img {
+    align-self: flex-end;
+}
+
+.add_member_outer {
+    background-color: #4CAEFF;
+}
+
+.add_member_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add_member_text {
+    width: 522px;
+}
+
+.payment_block {
+    display: flex;
+}
+
+.payment_block .text_paragraph {
+    max-width: 450px;
+}
+
+.payment_block > div:first-child {
+    width: 60%;
+}
+
+.payment_block .payment_image {
+    display: flex;
+    justify-content: center;
+}
+
+.final_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.appointment_block {
+    display: none;
+}
+
+@media screen and (max-width: 1184px) {
+    .persona_about {
+        grid-template-columns: 260px 4fr;
+        column-gap: 50px;
+    }
+
+    .persona_bio_block {
+        margin-left: 20px;
+        margin-top: 41px;
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    .persona_quote_block {
+        margin-left: 0;
+    }
+
+    .persona_image {
+        grid-row: 1/3;
+    }
+
+    .persona_goals {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-left: 20px;
+    }
+
+    .persona_motivation {
+        margin-left: 20px;
+
+        grid-row: 4/5;
+        grid-column: 1/2;
+        margin-top: 50px;
+
+    }
+
+    .persona_quote {
+        width: 100%;
+    }
+
+    .persona_frustrations h4 {
+        margin-top: 0;
+    }
+
+    .persona_frustrations {
+        margin-left: 20px;
+        margin-top: 50px;
+        grid-row: 4/5;
+        grid-column: 2/3;
+
+    }
+}
+
+
+@media screen and (max-width: 744px) {
+
+
+    .persona_story {
+        flex-wrap: wrap;
+    }
+
+    .persona_story > div {
+        width: calc(50% - 45px);
+    }
+
+    .signup_block,
+    .kano_block,
+    .persona_chart {
+        display: none;
+    }
+
+    .chart_quality_block,
+    .wireframes_block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .chart_quality_block {
+        gap: 120px;
+    }
+
+    .chart_quality_text,
+    .wireframes_text {
+        max-width: 100%;
+    }
+
+    .chart_quality_text_item {
+        margin-top: 40px;
+    }
+
+    .kpi_metrics_block {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .kpi_metrics_item {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .kpi_metrics_item h6 {
+        margin-top: 8px;
+    }
+
+    .kpi_metrics_item h3 {
+        margin-top: 0;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .kpi_metrics_item > div:first-child {
+        flex: 1 0 auto;
+    }
+
+    .kpi_metrics_item img {
+        width: 144px;
+    }
+
+    .add_member_block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 54px;
+    }
+
+    .payment_block > div:first-child,
+    .payment_block .text_paragraph,
+    .add_member_text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .payment_block .payment_image {
+        margin-top: 50px;
+    }
+
+    .payment_block > div:nth-child(2) {
+        display: none;
+    }
+
+
+    .appointment_block {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .final_images {
+        display: none;
+    }
+
+    .wireframe_paragraph_item .blue_line {
+        width: 12px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 670px) {
+    .persona_about {
+        grid-template-columns: 100%;
+    }
+
+    .persona_bio_block {
+        margin-left: 20px;
+        margin-top: 40px;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .persona_image {
+        grid-row: 1/2;
+    }
+
+    .persona_image img {
+        width: 100%;
+        /*height: 502px;*/
+        object-fit: cover;
+    }
+
+    .persona_quote_block {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 40px;
+
+    }
+
+    .persona_goals {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .persona_motivation {
+        margin-left: 20px;
+
+        grid-row: 5/6;
+        grid-column: 1/2;
+        margin-top: 50px;
+
+    }
+
+    .persona_motivation h4,
+    .persona_frustrations h4,
+    .persona_goals h4 {
+        margin-top: 0;
+    }
+
+    .persona_frustrations {
+        margin-left: 20px;
+        margin-top: 50px;
+        grid-row: 6/7;
+        grid-column: 1/2;
+
+    }
+
+    .persona_story {
+        flex-direction: column;
+
+    }
+
+    .persona_story > div {
+        width: 100%;
+    }
+
+    .persona_story {
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .chart_quality_text h4 {
+        font-size: 24px;
+    }
+
+    .chart_quality_text_item:first-child {
+        margin: 0;
+    }
+
+    .wireframes_text h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .wireframe_paragraph_item {
+        margin-top: 24px;
+    }
+
+    .kpi_metrics_outer > h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .kpi_metrics_block {
+        margin-top: 24px;
+        gap: 50px;
+    }
+
+    .kpi_metrics_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .kpi_metrics_item h3{
+        margin-top: 24px;
+        font-size: 24px;
+
+    }
+
+    .kpi_metrics_item h6{
+        margin-top: 8px;
+    }
+
+    .kpi_metrics_item .text_paragraph{
+        margin-top: 2px;
+    }
+    .page_subtitle {
+        margin-top: 16px;
+    }
+
+    .add_member_outer > div {
+        padding: 60px 0;
+    }
+
+    .add_member_text h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+.appointment_block h3,
+    .payment_block h3 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .appointment_block .text_paragraph,
+    .payment_block .text_paragraph {
+        margin-top: 16px;
+    }
+}
